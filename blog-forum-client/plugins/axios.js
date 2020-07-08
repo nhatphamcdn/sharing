@@ -16,8 +16,4 @@ export default ({ app, store, redirect }) => {
 
         return request;
     });
-
-    // axios.interceptors.response.use(function (response) {
-    //     return response.data;
-    // });
 }

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <label :for="labelId" class="block mb-1 text-sm">{{ label }}</label>
+        <label :for="labelId" class="block mb-2 text-sm font-medium text-gray-600">{{ label }}</label>
         <slot></slot>
     </div>
 </template>

@@ -56,10 +56,9 @@ export const actions = {
         });
     },
 
-    logout({ commit }) {
-        user.logout().then(() => {
+    async logout({ commit }) {
+        await user.logout().then((rs) => {
             Cookies.remove('token')
-
             commit('logout');
         }).catch(e => {
             console.log(e);
